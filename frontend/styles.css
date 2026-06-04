@@ -1,0 +1,22 @@
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --danger:#ef4444;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:var(--bg); margin:0;}
+.center{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{width:100%;max-width:420px;background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 20px rgba(25,25,25,0.08)}
+.title{margin:0;font-size:20px}
+.subtitle{margin:6px 0 18px;color:var(--muted);font-size:14px}
+.label{display:block;margin-top:12px;margin-bottom:6px;font-size:13px;color:var(--muted)}
+input[type="email"],input[type="password"]{width:100%;padding:12px 14px;border:1px solid #e6e9ef;border-radius:8px;font-size:14px}
+.actions{display:flex;align-items:center;justify-content:space-between;margin-top:18px}
+.btn{padding:10px 16px;border-radius:8px;border:0;cursor:pointer;font-weight:600}
+.btn.primary{background:var(--accent);color:white}
+.link{color:var(--accent);text-decoration:none;font-size:14px}
+.message{margin-top:12px;font-size:14px;color:var(--danger)}
+
+@media (max-width:420px){.card{padding:20px}}
